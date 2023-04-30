@@ -7,4 +7,5 @@ To start Postgres in Docker:
 
 
 Don't forget to set password and username to your database connection in 'application.yaml'.
+You also need to set username: email, and password: gmail app password.
 

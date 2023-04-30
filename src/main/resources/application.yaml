@@ -5,9 +5,9 @@ server:
 
 spring:
   datasource:
-    password: postgres
+    password:
     url: jdbc:postgresql://localhost:5432/registration
-    username: postgres
+    username:
   jpa:
     hibernate:
       ddl-auto: create-drop
@@ -16,3 +16,20 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
     show-sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username:
+    password:
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: "*"
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+
